@@ -73,8 +73,45 @@ public class StudentDAO {
         return false;
     }
 
+    public boolean insertStudent(Student student){
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String query = "INSERT INTO student(name, surname, phone, mail) " +
+                " VALUES (?, ?, ?, ?)";
+        try {
+            ps = con.prepareStatement(query);
+            ps.setString(1, student.getName());
+            ps.setString(2, student.getSurname());
+            ps.setString(3, student.getPhone());
+            ps.setString(4,student.getMail());
+            ps.execute();
+            return true;
+        }
+        catch (Exception e) {
+            System.out.println("Failed to add student: " + e.getMessage());
+        }
+        finally{
+            try{
+                con.close();
+            } catch(Exception e) {
+                System.out.println("Failed to close connection: " + e.getMessage());
+            }
+        }
+        return false;
+
+    }
+
     public static void main(String[] args) {
         var studentDao = new StudentDAO();
+
+        var newStudent = new Student("Very", "Generic", "666", "any@gmail.com");
+        var added = studentDao.insertStudent(newStudent);
+        if(added)
+            System.out.println("Student Successfully added");
+        else
+            System.out.println("Failed to add Student");
+        /*
+
         System.out.println("Listado de Estudiantes: ");
         List<Student> students = studentDao.listar();
         students.forEach(System.out::println);
@@ -86,6 +123,7 @@ public class StudentDAO {
         else
             System.out.println("No se encontro el Estudiante" + student1.getIdStudent());
 
+        */
 
     }
 }

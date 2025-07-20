@@ -5,13 +5,14 @@ import org.example.dominio.Student;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.example.conexion.dbConnection.getConnection;
 
 public class StudentDAO {
-    public List<Student> listar(){
+    public List<Student> listStudents(){
         List<Student> students = new ArrayList<>();
 
         PreparedStatement ps;
@@ -98,32 +99,55 @@ public class StudentDAO {
             }
         }
         return false;
-
+    }
+    public boolean modifyStudent(Student student){
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String query = "UPDATE student SET name=?, surname=?, phone=?, mail=? WHERE id_student=? ";
+        try {
+            ps = con.prepareStatement(query);
+            ps.setString(1,student.getName());
+            ps.setString(2, student.getSurname());
+            ps.setString(3, student.getPhone());
+            ps.setString(4,student.getMail());
+            ps.setInt(5,student.getIdStudent());
+            ps.execute();
+            return true;
+        } catch (Exception e) {
+            System.out.println("Failed to modify student");
+        }
+        finally {
+            try{
+                con.close();
+            }
+            catch (Exception e){
+                System.out.println("Error al cerrar conexion" + e.getMessage());
+            }
+        }
+        return false;
     }
 
-    public static void main(String[] args) {
-        var studentDao = new StudentDAO();
-
-        var newStudent = new Student("Very", "Generic", "666", "any@gmail.com");
-        var added = studentDao.insertStudent(newStudent);
-        if(added)
-            System.out.println("Student Successfully added");
-        else
-            System.out.println("Failed to add Student");
-        /*
-
-        System.out.println("Listado de Estudiantes: ");
-        List<Student> students = studentDao.listar();
-        students.forEach(System.out::println);
-
-        var student1 = new Student(1);
-        var encontrado = studentDao.findStudentByID(student1);
-        if(encontrado)
-            System.out.println("Estudiante encontrado: " + student1);
-        else
-            System.out.println("No se encontro el Estudiante" + student1.getIdStudent());
-
-        */
+    public boolean deleteStudent(Student student){
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String query = "DELETE FROM student WHERE id_student = ?";
+        try {
+            ps = con.prepareStatement(query);
+            ps.setInt(1,student.getIdStudent());
+            ps.execute();
+            return true;
+        } catch (SQLException e) {
+            System.out.println("Failed to delete student");
+        }
+        finally {
+            try{
+                con.close();
+            }
+            catch (Exception e){
+                System.out.println("Failed to close connection: " + e.getMessage());
+            }
+        }
+        return false;
 
     }
 }

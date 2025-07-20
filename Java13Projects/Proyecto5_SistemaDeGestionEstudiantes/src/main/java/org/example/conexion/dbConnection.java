@@ -25,15 +25,4 @@ public class dbConnection {
         }
         return dbconnection;
     }
-
-    public static void main(String[] args) {
-        var conection = dbConnection.getConnection();
-        if(conection != null){
-            System.out.println("Conection Success " + conection);
-        }
-        else{
-            System.out.println("Error al connect");
-        }
-    }
-
 }

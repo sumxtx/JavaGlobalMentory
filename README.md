@@ -15,4 +15,12 @@ Movies List App with persistance (File Handling)
 
 ### Proyecto 5
 
-Students School System with persistance (Databases - JDBC Mariadb)
+Students School System with persistance (Databases - JDBC Mariadb - Maven)
+
+### Proyecto 6
+
+Students School System with persistance 2 (Databases - JDBC Mariadb - SpringBoot)
+
+### Proyecto 7
+
+Book Store Management with GUI and persisantce (Swing - JDBC Mariadb - SpringBoot)

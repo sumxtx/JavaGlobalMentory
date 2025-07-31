@@ -22,3 +22,5 @@ public class BookStoreApplication {
 	}
 
 }
+
+// TODO: Make changes not instant, add a button like SAVE to save changes to db

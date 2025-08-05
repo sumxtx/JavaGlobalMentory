@@ -164,10 +164,16 @@ public class BookForm extends JFrame {
         idHiddenText.setVisible(false);
 
         // TODO: place custom component creation code here
-        this.bookTableModel = new DefaultTableModel(0, 5);
+        this.bookTableModel = new DefaultTableModel(0, 5){
+            @Override
+            public boolean isCellEditable(int row, int column){
+                return false;
+            }
+        };
         String[] headers = {"Id", "Book", "Author", "Price", "Existences"};
         this.bookTableModel.setColumnIdentifiers(headers);
         this.bookTable = new JTable(bookTableModel);
+        bookTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         listBooks();
     }
     private void listBooks(){

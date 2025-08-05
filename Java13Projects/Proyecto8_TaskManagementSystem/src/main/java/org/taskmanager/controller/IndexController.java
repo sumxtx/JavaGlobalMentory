@@ -131,12 +131,27 @@ public class IndexController implements Initializable {
 
     }
 
-    private void cleanForm(){
+    public void cleanForm(){
         idTaskInternal = null;
         taskNameField.clear();
         personField.clear();
         statusField.clear();
     }
+
+    public void deleteTask(){
+        var task = taskTable.getSelectionModel().getSelectedItem();
+        if(task != null){
+            logger.info("Task to delete: " + task.toString());
+            taskService.deleteTask(task);
+            showMessage("Info", "Task Successfully Removed");
+            cleanForm();
+            listTasks();
+        }
+        else{
+            showMessage("Error", "No Task Has Been Selected");
+        }
+    }
+
     private void showMessage(String title, String message){
         /*
         Alert alert = new Alert(Alert.AlertType.INFORMATION);

@@ -31,6 +31,6 @@ public class TaskService implements ITaskService{
 
     @Override
     public void deleteTask(Task task) {
-
+        taskRepo.delete(task);
     }
 }

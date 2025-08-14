@@ -28,3 +28,7 @@ Book Store Management with GUI and persistence (Swing - JDBC Mariadb - SpringBoo
 ### Proyecto 8
 
 Task Management App with GUI and persistence (JavaFX - JDBC Mariadb - SpringBoot)
+
+### Proyecto 9
+
+Employees Management System with Web Interface and persistence (JSP - Spring MVC - JDBC Mariadb - Spring Boot)

@@ -3,32 +3,45 @@
 
 ### Proyecto 2
 
-People List App (OOP concepts 1)
+People List App 
+(OOP concepts 1)
 
 ### Proyecto 3
 
-Computer Shop Orders App (OOP concepts 2)
+Computer Shop Orders App 
+(OOP concepts 2)
 
 ### Proyecto 4
 
-Movies List App with persistence (File Handling)
+Movies List App with persistence 
+(File Handling)
 
 ### Proyecto 5
 
-Students School System with persistence (Databases - JDBC Mariadb - Maven)
+Students School System with persistence 
+(Databases - JDBC Mariadb - Maven)
 
 ### Proyecto 6
 
-Students School System with persistence 2 (Databases - JDBC Mariadb - SpringBoot)
+Students School System with persistence 2 
+(Databases - JDBC Mariadb - SpringBoot)
 
 ### Proyecto 7
 
-Book Store Management with GUI and persistence (Swing - JDBC Mariadb - SpringBoot)
+Book Store Management with GUI and persistence 
+(Swing - JDBC Mariadb - SpringBoot)
 
 ### Proyecto 8
 
-Task Management App with GUI and persistence (JavaFX - JDBC Mariadb - SpringBoot)
+Task Management App with GUI and persistence 
+(JavaFX - JDBC Mariadb - SpringBoot)
 
 ### Proyecto 9
 
-Employees Management System with Web Interface and persistence (JSP - Spring MVC - JDBC Mariadb - Spring Boot)
+Employees Management System with Web Interface and persistence 
+(JSP - Spring MVC - JDBC Mariadb - Spring Boot)
+
+### Proyecto 10
+
+Contact Management System with Web Interface and persistence 
+(Thymeleaf - JDBC Mariadb - Spring Boot)

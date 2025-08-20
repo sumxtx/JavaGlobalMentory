@@ -16,6 +16,8 @@ Computer Shop Orders App
 Movies List App with persistence 
 (File Handling)
 
+> For Proyects with a Database, mariadb is being used, you need to create the database according to the correspondent src/main/resources/application.properties configuration  
+
 ### Proyecto 5
 
 Students School System with persistence 

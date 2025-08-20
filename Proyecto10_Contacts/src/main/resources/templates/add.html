@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <head th:replace="~{fragments/header::header}"></head>
+
+    <body>
+        <h3>Add Contact </h3>
+        <div th:replace="~{fragments/navigation::navlist}"></div>
+
+    <form action="/add" modelAttribute="contactForm" method="post">
+
+        <label for="contactName">Name</label>
+        <input type="text" id="contactName" name="contactName">
+        <label for="contactNumber">Phone</label>
+        <input type="text" id="contactNumber" name="contactNumber">
+        <label for="contactMail">Mail</label>
+        <input type="text" id="contactMail" name="contactMail">
+        <button type="submit">Add</button>
+        <a href="/">Go Back</a>
+    </form>
+    </body>
+</html>

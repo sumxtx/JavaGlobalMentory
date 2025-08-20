@@ -1,0 +1,21 @@
+<table th:fragment="list">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Number</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="contact: ${contacts}">
+        <th th:text="${contact.id_contact}" scope="row"></th>
+        <td th:text="${contact.contactName}"></td>
+        <td th:text="${contact.contactNumber}"></td>
+        <td th:text="${contact.contactMail}"></td>
+        <td><a th:href="@{/edit/{id}(id=${contact.id_contact})}">Edit</a></td>
+        <td><a th:href="@{/delete/{id}(id=${contact.id_contact})}">Delete</a></td>
+        </th>
+    </tr>
+    </tbody>
+</table>

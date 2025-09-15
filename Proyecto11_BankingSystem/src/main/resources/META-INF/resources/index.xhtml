@@ -1,0 +1,28 @@
+<html xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Bank Accounts System</title>
+</h:head>
+<h:body>
+
+    <h3>Bank Accounts System</h3>
+    <div>
+        <p:dataTable value="#{indexController.accounts}" var="account">
+            <div>Valores de la tabla:</div>
+            <p:column headerText="Id">
+                <h:outputText value="#{account.idAccount}"/>
+            </p:column>
+            <p:column headerText="Name">
+                <h:outputText value="#{account.accountOwner}"/>
+            </p:column>
+            <p:column headerText="Type">
+                <h:outputText value="#{account.accountType}"/>
+            </p:column>
+            <p:column headerText="Balance">
+                <h:outputText value="#{account.accountBalance}"/>
+            </p:column>
+        </p:dataTable>
+    </div>
+</h:body>
+</html>

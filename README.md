@@ -78,13 +78,3 @@ https://stackoverflow.com/a/17729637
 - **Technologies**: Angular (Frontend), Spring Boot (Backend), MariaDB, Lombok.
 
 ---
-
-## Getting Started
-
-To get started with any of the projects, clone the repository and follow the instructions in the respective project folders. Each project contains its own README file with setup and usage instructions.
-
-```bash
-git clone https://github.com/yourusername/your-repo.git
-
-Fullstack Inventory Management System
-(Angular - Frontend - Spring Boot - Backend - Mariadb - Lombok)

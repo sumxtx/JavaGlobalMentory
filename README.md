@@ -11,58 +11,80 @@ src/main/java/<group.artifact>/modelo/<table.java> class
 if otherwise it's not installed and configured. Sync the Maven Dependencies and 
 https://stackoverflow.com/a/17729637
 
+---
 
-### Proyecto 2
+## Projects Overview
 
-People List App 
-(OOP concepts 1)
+| Project Number | Project Title | Key Technologies |
+|----------------|---------------|------------------|
+| **Proyecto 2** | People List App | OOP Concepts 1 |
+| **Proyecto 3** | Computer Shop Orders App | OOP Concepts 2 |
+| **Proyecto 4** | Movies List App with Persistence | File Handling |
+| **Proyecto 5** | Students School System with Persistence | JDBC, MariaDB, Maven, Lombok |
+| **Proyecto 6** | Students School System with Persistence 2 | JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 7** | Book Store Management with GUI and Persistence | Swing, JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 8** | Task Management App with GUI and Persistence | JavaFX, JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 9** | Employees Management System with Web Interface and Persistence | JSP, Spring MVC, JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 10** | Contact Management System with Web Interface and Persistence | Thymeleaf, JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 11** | Banking System with Web Interface | PrimeFaces, JDBC, MariaDB, Spring Boot, Lombok |
+| **Proyecto 12** | Fullstack Inventory Management System | Angular (Frontend), Spring Boot (Backend), MariaDB, Lombok |
 
-### Proyecto 3
+---
 
-Computer Shop Orders App 
-(OOP concepts 2)
+## Project Details
 
-### Proyecto 4
+### Proyecto 2: People List App
+- **Description**: A simple application to manage a list of people using basic OOP principles.
+- **Technologies**: Java, OOP Concepts.
 
-Movies List App with persistence 
-(File Handling)
+### Proyecto 3: Computer Shop Orders App
+- **Description**: An application to handle orders in a computer shop, implementing advanced OOP concepts.
+- **Technologies**: Java, OOP Concepts.
 
-### Proyecto 5
+### Proyecto 4: Movies List App with Persistence
+- **Description**: A movies list application that saves data using file handling techniques.
+- **Technologies**: Java, File Handling.
 
-Students School System with persistence 
-(Databases - JDBC Mariadb - Maven - Lombok)
+### Proyecto 5: Students School System with Persistence
+- **Description**: A school management system that utilizes JDBC for database connectivity and persistence.
+- **Technologies**: Java, JDBC, MariaDB, Maven, Lombok.
 
-### Proyecto 6
+### Proyecto 6: Students School System with Persistence 2
+- **Description**: An enhanced version of the school system using Spring Boot for better structure and management.
+- **Technologies**: Java, JDBC, MariaDB, Spring Boot, Lombok.
 
-Students School System with persistence 2 
-(Databases - JDBC Mariadb - SpringBoot - Lombok)
+### Proyecto 7: Book Store Management with GUI and Persistence
+- **Description**: A GUI-based application for managing a bookstore, featuring data persistence.
+- **Technologies**: Java, Swing, JDBC, MariaDB, Spring Boot, Lombok.
 
-### Proyecto 7
+### Proyecto 8: Task Management App with GUI and Persistence
+- **Description**: A task management application with a user-friendly GUI and persistent data storage.
+- **Technologies**: Java, JavaFX, JDBC, MariaDB, Spring Boot, Lombok.
 
-Book Store Management with GUI and persistence 
-(Swing - JDBC Mariadb - SpringBoot - Lombok)
+### Proyecto 9: Employees Management System with Web Interface and Persistence
+- **Description**: A web-based system for managing employee records with persistent storage.
+- **Technologies**: Java, JSP, Spring MVC, JDBC, MariaDB, Spring Boot, Lombok.
 
-### Proyecto 8
+### Proyecto 10: Contact Management System with Web Interface and Persistence
+- **Description**: A web application for managing contacts with a focus on data persistence.
+- **Technologies**: Java, Thymeleaf, JDBC, MariaDB, Spring Boot, Lombok.
 
-Task Management App with GUI and persistence 
-(JavaFX - JDBC Mariadb - SpringBoot - Lombok)
+### Proyecto 11: Banking System with Web Interface
+- **Description**: A banking application featuring a web interface for user interactions.
+- **Technologies**: Java, PrimeFaces, JDBC, MariaDB, Spring Boot, Lombok.
 
-### Proyecto 9
+### Proyecto 12: Fullstack Inventory Management System
+- **Description**: A comprehensive inventory management system with a full-stack architecture.
+- **Technologies**: Angular (Frontend), Spring Boot (Backend), MariaDB, Lombok.
 
-Employees Management System with Web Interface and persistence 
-(JSP - Spring MVC - JDBC Mariadb - Spring Boot - Lombok)
+---
 
-### Proyecto 10
+## Getting Started
 
-Contact Management System with Web Interface and persistence 
-(Thymeleaf - JDBC Mariadb - Spring Boot - Lombok)
+To get started with any of the projects, clone the repository and follow the instructions in the respective project folders. Each project contains its own README file with setup and usage instructions.
 
-### Proyecto 11
-
-Banking System with Web Interface
-(PrimeFaces - JDBC Mariadb - Spring Boot - Lombok)
-
-### Proyecto 12
+```bash
+git clone https://github.com/yourusername/your-repo.git
 
 Fullstack Inventory Management System
 (Angular - Frontend - Spring Boot - Backend - Mariadb - Lombok)

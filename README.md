@@ -11,6 +11,9 @@ src/main/java/<group.artifact>/modelo/<table.java> class
 if otherwise it's not installed and configured. Sync the Maven Dependencies and 
 https://stackoverflow.com/a/17729637
 
+Those Projects are not very elaborated and complex, they function as boilerplates
+to implement the connection between the different technologies
+
 ---
 
 ## Projects Overview
@@ -28,6 +31,7 @@ https://stackoverflow.com/a/17729637
 | **Proyecto 10** | Contact Management System with Web Interface and Persistence | Thymeleaf, JDBC, MariaDB, Spring Boot, Lombok |
 | **Proyecto 11** | Banking System with Web Interface | PrimeFaces, JDBC, MariaDB, Spring Boot, Lombok |
 | **Proyecto 12** | Fullstack Inventory Management System | Angular (Frontend), Spring Boot (Backend), MariaDB, Lombok |
+| **Proyecto 13** | Fullstack RRHH Management System | ReactJS (Frontend), Spring Boot (Backend), MariaDB, Lombok |
 
 ---
 
@@ -77,4 +81,7 @@ https://stackoverflow.com/a/17729637
 - **Description**: A comprehensive inventory management system with a full-stack architecture.
 - **Technologies**: Angular (Frontend), Spring Boot (Backend), MariaDB, Lombok.
 
+### Proyecto 13: Fullstack Human Resources Management System
+- **Description**: A comprehensive Employees Management system with a full-stack architecture.
+- **Technologies**: ReactJS (Frontend), Spring Boot (Backend), MariaDB, Lombok.
 ---

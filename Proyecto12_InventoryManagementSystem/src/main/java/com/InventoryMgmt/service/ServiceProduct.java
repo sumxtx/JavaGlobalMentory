@@ -25,8 +25,9 @@ public class ServiceProduct implements IServiceProduct{
     }
 
     @Override
-    public void saveProduct(Product product) {
+    public Product saveProduct(Product product) {
         this.repoProduct.save(product);
+        return product;
     }
 
     @Override

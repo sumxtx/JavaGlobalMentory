@@ -7,7 +7,7 @@ import java.util.List;
 public interface IServiceProduct {
     List<Product> listProducts();
     Product findProductById(Integer idProduct);
-    void saveProduct(Product product);
+    Product saveProduct(Product product);
     void deleteProductById(Integer idProduct);
 
 }

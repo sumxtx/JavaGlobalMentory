@@ -9,6 +9,8 @@
         <th scope="col">Description</th>
         <th scope="col">Price</th>
         <th scope="col">Existence</th>
+        <th scope="col" class="text-center"></th>
+        <th scope="col" class="text-center"></th>
       </tr>
     </thead>
     <tbody>
@@ -19,6 +21,16 @@
         <td>{{product.description}}</td>
         <td>{{product.price}}</td>
         <td>{{product.existence}}</td>
+        <td class="text-center">
+          <div>
+            <button (click)="modifyProduct(product.idProduct)" class="btn btn-warning btn-sm me-3">Modify</button>
+          </div>
+        </td>
+        <td>
+          <div>
+            <button (click)="deleteProduct(product.idProduct)" class="btn btn-danger btn-sm me-3">Delete</button>
+          </div>
+        </td>
       </tr>
       }
     </tbody>
